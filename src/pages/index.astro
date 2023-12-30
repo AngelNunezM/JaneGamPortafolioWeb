@@ -5,6 +5,8 @@ import Instagram from '../components/Icons/Instagram.astro'
 import Spotify from '../components/Icons/Spotify.astro'
 import Tiktok from '../components/Icons/Tiktok.astro'
 import Youtube from '../components/Icons/Youtube.astro'
+
+import Song from '../components/Song.astro';
 ---
 
 <Layout title="Jane Gam - Janeth Palacios">
@@ -16,7 +18,7 @@ import Youtube from '../components/Icons/Youtube.astro'
 			<a href="https://www.twitch.tv/janegammx"><Twitch /></a>
 			<a href="https://open.spotify.com/intl-es/artist/1a5oOKy0mPnb4X8PAUQgIj?si=5IShcmgaT3GADAAcs6I--Q"><Spotify /></a>
 			<a href="#"><Tiktok /></a>
-			<a href="#"><Youtube /></a>
+			<a href="https://www.youtube.com/@JaneGam"><Youtube /></a>
 		</aside>
 		<button class="absolute bottom-5">
 			<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
@@ -24,7 +26,7 @@ import Youtube from '../components/Icons/Youtube.astro'
 			</svg>
 		</button>
 	</section>
-	<section id="About" class="flex flex-col items-center justify-center h-full bg-white">
+	<section id="About" class="relative flex flex-col items-center justify-center h-full bg-white">
 		<div class="flex gap-10">
 			<div class="shadow-xl">
 				<img src="https://scontent.ftrc2-1.fna.fbcdn.net/v/t39.30808-6/272291340_1064463537456938_2058496443781528000_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=sOClbz-25MQAX9EkMlm&_nc_ht=scontent.ftrc2-1.fna&oh=00_AfB8MGNcYAq44Tx8K9_Rtkhstjw1TQ0cp2aPZXJvmPN3uw&oe=6593C24B" alt="Photo Jane Gam Perfil"
@@ -48,8 +50,47 @@ import Youtube from '../components/Icons/Youtube.astro'
 						<li class="p-2 rounded-lg bg-pink-100 border border-pink-400 text-pink-600 font-medium w-fit">Take Care Of Venus</li>
 					</ul>
 				</div>
+				<div class="h-full flex items-end justify-end">
+					<a href="#" class="text-violet-600 font-medium">More About Me</a>
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"stroke='rgb(124, 58, 237)' width="24" height="24" viewBox="0 0 24 24" stroke-width="2"  fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+				</div>
 			</div>
 		</div>
+		<button class="absolute bottom-5">
+			<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+			</svg>
+		</button>
+	</section>
+	<section id="Music" class="relative flex items-center justify-center px-48 h-full bg-gradient-to-b from-white to-pink-200">
+		<div class="flex flex-col items-center">
+			<div class="flex gap-3 items-center">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-music h-7 w-7" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M13 17a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M9 17v-13h10v13" /><path d="M9 8h10" /></svg>
+				<h2 class="font-bold text-3xl">MY MUSIC</h2>
+			</div>
+			<div class="w-80 flex flex-col gap-3">
+				<p class="text-lg text-zinc-700">All my music on your favorite platfor,
+					 <span class="text-green-400 font-bold">Spotify</span>,
+					 <span class="text-pink-400 font-bold">Apple Music</span>,
+					 <span class="text-purple-400 font-bold">Deezer</span>, etc..
+				</p>
+				<div class="bg-white shadow-lg rounded p-2 w-96 items-center">
+					<span class="text-zinc-700 font-medium">My Songs most recent</span>
+					<Song name="Diamantes" published="4 de Diciembre 2023" image="/Images/DiamanteSong.png"/>
+					<Song name="La Cruda" published="23 de Junio 2023" image="/Images/Lacruda.png"/>
+					<Song name="Galactico" published="11 de Abril 2023" image="/Images/GalacticoSong.png"/>
+					<a href="#" class="w-full text-end">Lisent to all music</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<img src="/Images/spotify.png" alt="">
+		</div>
+		<button class="absolute bottom-5">
+			<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+				<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+			</svg>
+		</button>
 	</section>
 </Layout>
 
